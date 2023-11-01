@@ -5,11 +5,14 @@ import axios from 'axios'
 
 const Home = () => {
 
+
   const [products, setProducts] = useState([])
+
 
   const fetchProducts =  async ()=>{
    const response = await axios.get("https://652fbaf06c756603295d8f7f.mockapi.io/products")
     setProducts(response.data)
+
   }
 
 useEffect(() => {
