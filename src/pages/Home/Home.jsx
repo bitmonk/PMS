@@ -19,6 +19,7 @@ useEffect(() => {
   return (
     <>
     <Navbar />
+
     <div className="card-container">
     {
       products.map((product)=>{
@@ -32,6 +33,7 @@ useEffect(() => {
     })
     }
     </div>
+    
     </>
   )
 }
