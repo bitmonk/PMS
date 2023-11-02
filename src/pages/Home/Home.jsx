@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import Navbar from '../../components/Navbar/Navbar'
 import './Home.css'
 import axios from 'axios'
+import { Link } from 'react-router-dom'
 
 const Home = () => {
 
@@ -31,7 +32,9 @@ useEffect(() => {
     <img src={product.productImage} alt="Product Image" />
     <h2 className="product-name">{product.productName}</h2>
     <p className="product-description">{product.productDescription}</p>
+    <Link to="/productInfo">See More</Link>
     </div>
+
     )
     })
     }
