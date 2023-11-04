@@ -1,8 +1,3 @@
-.card-container{
-    display: flex;
-    justify-content:space-around;
-    flex-wrap: wrap;
-}
 .card {
     width: 300px;
     border: 1px solid #ccc;
@@ -24,5 +19,5 @@
 
 .product-description {
     font-size: 1rem;
-    color: #555;
+    color: #ff0000;
 }
