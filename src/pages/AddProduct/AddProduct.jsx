@@ -7,7 +7,7 @@ import { useNavigate } from 'react-router-dom'
 
 const AddProduct = () => {
 
-  const navigate = useNavigate();
+  const navigate = useNavigate()
   //First Approach
 // const [productImage ,setProductImage] = useState("")
 // const [productName, setProductName] = useState("")

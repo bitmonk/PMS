@@ -19,5 +19,8 @@
 
 .product-description {
     font-size: 1rem;
-    color: #ff0000;
+    color: #ccc;
+}
+.product-material{
+    color: yellow;
 }
