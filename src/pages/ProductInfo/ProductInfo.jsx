@@ -12,7 +12,6 @@ const ProductInfo = () => {
 
   const [product, setProduct] = useState({})
 
-
   const deleteProduct = async() =>{
     //api delete
     const response = await axios.delete("https://652fbaf06c756603295d8f7f.mockapi.io/products/" + id)
@@ -44,6 +43,7 @@ const ProductInfo = () => {
     <p className="product-description">{product.productDescription}</p>
     <p className="product-material">{product.productMaterial}</p>
     <button onClick={deleteProduct}>Delete</button>
+    <button onClick={()=>navigate(`/editProduct/${id}`)}>Edit</button>
     </div>
 
     </>
